@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tienda AVON</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: linear-gradient(to right top, #5e60ce, #8a63d2, #b468d5, #db6cda, #ff71df);
+      margin: 0;
+      padding: 20px;
+    }
+    body {
+    background: linear-gradient(to right top, #5e60ce, #8a63d2, #b468d5, #db6cda, #ff71df);
+  }
+
+    h1 {
+      color: #4a148c;
+      text-align: center;
+    }
+
+    
+    h2 {
+    color: #000000;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .categories {
+      flex: 1;
+      background: linear-gradient(to bottom right, #8a73b5, #7d62ac);
+      padding: 10px;
+      border: 1px solid black;
+    }
+
+    .products {
+      flex: 3;
+      background-color: #ffffff;
+      padding: 10px;
+    }
+
+    .product {
+      border: 1px solid #000000;
+      border-radius: 5px;
+      padding: 10px;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      background-color: #965ece;
+    }
+
+    .product img {
+      max-width: 100px;
+      margin-right: 10px;
+    }
+
+
+    .cart {
+  flex: 1;
+  background: linear-gradient(to bottom right, #ffd1dc, #ff9aa2);
+  padding: 10px;
+  border: 1px solid black;
+}
+
+    .cart-item {
+      margin-bottom: 10px;
+    }
+
+    .search-container {
+      margin-bottom: 20px;
+    }
+
+    .search-container input {
+      padding: 5px;
+      margin-right: 10px;
+    }
+
+    .search-container button {
+      padding: 5px 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Tienda AvonVe</h1>
+
+  <div class="container">
+    <div class="categories">
+      <h2>Categorías</h2>
+      <button class="category-btn" data-category="todos">Todos</button>
+    </div>
+
+    <div class="products" id="contenedorProducto"></div>
+
+    <div class="cart" id="contenedorCarrito">
+
+      <h2>Tu Carrito</h2>
+      <div id="cart-items"></div>
+
+    </div>
+
+    <div id="message-container"></div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+ 
